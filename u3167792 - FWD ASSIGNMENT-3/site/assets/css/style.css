@@ -1,0 +1,195 @@
+html {}
+
+body {
+    background-color: rgba(228, 228, 228);
+}
+
+a:link {
+    color: rgba(0, 0, 0);
+}
+
+a:hover {
+    color: rgba(255, 0, 0);
+}
+
+a:visited {
+    color: rgba(0, 255, 255);
+}
+
+.link { /* Creates single line between links */
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+
+li {
+    display: inline;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+p {
+    color: rgba(0, 0, 0);
+}
+
+header {
+    text-align: center;
+    background-image: url(../img/norfolk-island-27.JPG); /* Background image for header */
+    background-attachment: fixed;
+    background-position: 15% -50%;
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    height: 200px;
+}
+header p{
+font-size: 1px;
+}
+nav { /*Controls the navbar*/
+    border: 3px solid black;
+    font-size: 200%;
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Brings navbar to front */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: auto;
+    padding-right: auto;
+}
+.blue{ /* controls index navbar */
+    background-color: rgba(53, 168, 234);
+}
+.orange{ /* controls page 2 navbar */
+    background-color: rgb(255,160,64);
+}
+.green{ /* controls page 3 navbar */
+    background-color: rgb(112,235,77);
+}
+nav ul{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+main {
+    background-color: rgba(228, 228, 228);
+}
+#content1, #content2, #content3{ /* controls content titles padding */
+    padding-top: 70px;
+}
+main h1 {
+    font-size: 300%;
+    color: rgba(0, 0, 0);
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding-bottom: 35px;
+}
+main h2{
+    font-size: 250%;
+    text-align: center;
+    margin-top: 10px;
+}
+main p{ /* controls main text */
+    margin: 20px auto;
+    width: 80%;
+    text-align: justify;
+    font-size: 115%;
+    line-height: 20px;
+    column-count: 2;
+    column-gap: 30px;
+    text-indent: 1em;
+}
+main img{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+div h2 {
+    text-align: center;
+    font-size: 170%;
+    color: rgba(0, 0, 0);
+    margin: 5px 0;
+}
+
+div {
+    text-align: justify;
+    margin: 10px;
+}
+
+.content p {
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    font-size: 150%;
+    background-color: rgba(228, 228, 228);
+}
+footer p{
+    margin: 10px 0;
+    
+}
+footer a{
+    display: block;
+    position: relative;
+    margin: 10px 0;
+    
+}
+footer img{
+    display: inline-block;
+    width: 5%;
+    height: 5%;
+    padding: 10px;
+}
+
+@media screen and (max-device-width: 930px) {
+    nav{
+        font-size: 125%;
+    }
+    nav h3{
+        font-size: 125%;
+    }
+    nav p{
+        font-size: 125%;
+    }
+}
+@media screen and (min-device-width:2000px){
+    header{
+        background-size: cover;
+    }
+}
+@media screen and (max-device-width: 650px) { 
+    li{
+        display: block;
+        width: 100%;
+    }
+
+    .link{
+        border: none;
+    }
+    .norfolk{
+        display: none;
+    }
+    
+    main p{
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-device-width: 450px) {
+    main p{ /* reduces column count to 1 */
+    column-count: 1;
+    }
+}
+
+@media screen and (max-device-width: 200px) {
+    header{ /* takes away parallax image at such small screens */
+    display: none;
+    }
+}
+
